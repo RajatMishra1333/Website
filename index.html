@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajat Mishra | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .jumbotron {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRFNtufYx_oU-UYKJ0wJ-V15Rsc6sF0Fuxg&s');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+      margin-top: 50px;
+      color: #fff;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #footer {
+      background-color: aquamarine;
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .nav-link.active {
+      background-color: #198754;
+      color: white !important;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: contain;
+    }
+
+    .card {
+      height: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarScroll" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Rajat Mishra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#jumbotron">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex needs-validation" novalidate onsubmit="return validateForm(event)">
+          <input class="form-control me-2" id="email" type="email" placeholder="Email" required>
+          <input class="form-control me-2" id="password" type="password" placeholder="Password" required>
+          <button class="btn btn-success" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron" id="jumbotron">
+    <h1 class="display-4">Hi, I'm Rajat Mishra</h1>
+    <p class="lead">Tech enthusiast | Web Developer | Designer</p>
+    <hr class="my-4" style="width: 60%; margin: auto; background: #ccc;">
+    <p>Welcome to my personal portfolio website.</p>
+    <p class="lead mt-3">
+      <a class="btn btn-primary btn-lg" href="#about" role="button">Explore More</a>
+    </p>
+  </div>
+
+  <!-- About / Skills Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1>Skills & Features</h1>
+        <p>I build responsive websites, graphics, and work with modern tech stacks.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4841.jpg" class="card-img-top" alt="Frontend Developer">
+            <div class="card-body">
+              <h5 class="card-title">Frontend Developer</h5>
+              <p class="card-text">Skilled in HTML, CSS, Bootstrap, React.js and responsive layouts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4841.jpg" class="card-img-top" alt="Graphic Designer">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Designer</h5>
+              <p class="card-text">Experienced in Photoshop, After Effects, and product visual creation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4841.jpg" class="card-img-top" alt="AI Tools">
+            <div class="card-body">
+              <h5 class="card-title">AI & Automation</h5>
+              <p class="card-text">Learning to integrate AI tools for automation and productivity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer">
+    <h3>Let's Connect</h3>
+    <p>Contact me or download my resume from here.</p>
+    <p>
+      <a href="https://www.instagram.com/rajat_2458/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vMT5okHqQ_aSNzP-KI4s_tRcPxsUqzNvyw&s" width="150" alt="Download Resume"></a>
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Email & Password Validation -->
+  <script>
+    function validateForm(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?#&])[A-Za-z\d@$!%*?#&]{8,}$/;
+
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+
+      if (!passwordPattern.test(password)) {
+        alert('Password must be 8+ characters with uppercase, lowercase, number, and special character.');
+        return false;
+      }
+
+      alert('Login successful!');
+      return true;
+    }
+  </script>
+
+</body>
+</html>
